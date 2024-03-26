@@ -1,7 +1,12 @@
 # temp-deleter
-A script whose sole purpose is to delete temporary files from Windows
+A script whose sole purpose is to delete temporary files from your operating system.
 
 # How to use
+![image](https://github.com/giomascitelli/temp-deleter/assets/47045018/ace098e6-029d-463d-a81a-e88647069f55)
+
+You can just open the executable and see the results.
+
+# How to run the .py file
 
 1. Make sure you have Python 3 installed.
 
