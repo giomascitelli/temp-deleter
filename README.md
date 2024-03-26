@@ -7,8 +7,14 @@ A script whose sole purpose is to delete temporary files from Windows
 
 2. Open the Windows Terminal as an administrator
 
-3. Type "cd" and the path to the folder where you placed "temp-deleter.py"
+3. Type "cd" and the path to the folder where you placed "temp-deleter.py":
 
-   As an example: cd C:\Users\Username\Desktop
+```
+   cd C:\Users\Username\Desktop
+```
 
-5. Type "python temp-deleter.py" to run the script.
+5. Run the script:
+
+```
+   python temp-deleter.py
+```
