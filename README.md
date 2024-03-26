@@ -16,7 +16,7 @@ Currently, this script deletes the contents of the following folders:
 # How to use
 ![image](https://github.com/giomascitelli/temp-deleter/assets/47045018/ace098e6-029d-463d-a81a-e88647069f55)
 
-You can open the executable and see the results.
+Open the executable as <b>admin</b> and see the results.
 
 # How to run the .py file
 
