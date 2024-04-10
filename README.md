@@ -4,14 +4,10 @@ A script whose sole purpose is to delete temporary files from your operating sys
 Currently on **Windows**, this script deletes the contents of the following folders:
 
 ```
-'C:\Windows\Temp';
-
-'%USERPROFILE%\AppData\Local\Temp';
-
-'C:\Windows\Panther';
-
-'C:\Windows\SoftwareDistribution\Download';
-
+'C:\Windows\Temp',
+'%USERPROFILE%\AppData\Local\Temp',
+'C:\Windows\Panther',
+'C:\Windows\SoftwareDistribution\Download',
 '%USERPROFILE%\AppData\Local\Microsoft\Windows\Explorer'
 ```
 
