@@ -1,8 +1,9 @@
 # temp-deleter
-A script whose sole purpose is to delete temporary files from your operating system.
+A script whose sole purpose is to delete temporary files from your operating system (currently **Windows** and **Linux**).
 
-Currently, this script deletes the contents of the following folders:
+Currently on **Windows**, this script deletes the contents of the following folders:
 
+```
 'C:\Windows\Temp';
 
 '%USERPROFILE%\AppData\Local\Temp';
@@ -12,6 +13,20 @@ Currently, this script deletes the contents of the following folders:
 'C:\Windows\SoftwareDistribution\Download';
 
 '%USERPROFILE%\AppData\Local\Microsoft\Windows\Explorer'
+```
+
+
+Currently on **Linux (Ubuntu)**, this script deletes the contents of the following folders:
+
+```
+'/tmp',
+'/var/tmp',
+'/.cache',
+'var/cache',
+'var/cache/apt/archives',
+'/.config',
+'/var/log'
+```
 
 # Why would I want to use this script anyway?
 temp-deleter offers a convenient way to manage temporary files on your operating system. But why would I want to do that?
