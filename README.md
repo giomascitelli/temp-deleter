@@ -1,5 +1,9 @@
-# temp-deleter
+# temp-deleter v1.1
 A script whose sole purpose is to delete temporary files from your operating system (currently **Windows** and **Linux**).
+
+The changes made in version 1.1 **(currently only on Windows)** are that instead of flooding the user's terminal when they run the script, temp-deleter generates a log file that records the status of which files were successfully deleted and which ones could not be removed.
+
+In addition to that, to prevent the log file from becoming excessively large over time, each script execution refreshes it. Each time the script runs, the log file is updated and overwritten with the most recent information.
 
 Currently on **Windows**, this script deletes the contents of the following folders:
 
@@ -32,7 +36,7 @@ temp-deleter offers a convenient way to manage temporary files on your operating
 2. <b>Privacy and Security:</b> Temporary files may also contain sensitive information, such as cached data or logs. Deleting these files regularly with temp-deleter helps safeguard your privacy by reducing the risk of unauthorized access to such data.
 
 # How to use temp-deleter on Windows
-![image](https://github.com/giomascitelli/temp-deleter/assets/47045018/ace098e6-029d-463d-a81a-e88647069f55)
+![image](https://github.com/giomascitelli/temp-deleter/assets/47045018/cc43fceb-9cb8-4377-9da4-10873bd1ac96)
 
 Open the executable as <b>admin</b> and see the results.
 
