@@ -1,4 +1,4 @@
-# temp-deleter v1.1
+# temp-deleter v1.2
 A script whose sole purpose is to delete temporary files from your operating system (currently **Windows** and **Linux**).
 
 The changes made in version 1.1 **(currently only on Windows)** are that instead of flooding the user's terminal when they run the script, temp-deleter generates a log file that records the status of which files were successfully deleted and which ones could not be removed.
