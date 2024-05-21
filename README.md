@@ -46,17 +46,22 @@ To store log files in your Azure cloud, add your container's SAS URL to `logging
 
 ## Steps to enable Azure Cloud Logging on temp-deleter:
 
-1. Clone this repository using GitHub or the following command:
+1. <b>Clone this repository using GitHub or the following command:</b>
    ```
    git clone <repository_url>
    ```
 
-3. Make sure you have Python 3 installed by typing in your terminal the following command:
+3. <b>Make sure you have Python 3 installed by typing in your terminal the following command:</b>
    ```
    python --version
    ```
 
-5. Open `src\logging_setup.py` and update the line
+4. <b>Make sure to install the necessary packages by using the following command:</b>
+   ```
+   pip install -r requirements.txt
+   ```
+
+6. <b>Open `src\logging_setup.py` and update the line</b>
    ```
    sas_url = ''
    ```
