@@ -5,7 +5,7 @@ The changes made in version 1.1 **(currently only on Windows)** are that instead
 
 In addition to that, to prevent the log file from becoming excessively large over time, each script execution refreshes it. Each time the script runs, the log file is updated and overwritten with the most recent information.
 
-Currently on **Windows**, this script deletes the contents of the following folders:
+Currently, on **Windows**, this script deletes the contents of the following folders:
 
 ```
 'C:\Windows\Temp',    # System temporary files
@@ -16,7 +16,7 @@ Currently on **Windows**, this script deletes the contents of the following fold
 ```
 
 
-Currently on **Linux (Ubuntu)**, this script deletes the contents of the following folders:
+Currently, on **Linux (Ubuntu)**, this script deletes the contents of the following folders:
 
 ```
 '/tmp',    # Temporary files
@@ -36,24 +36,52 @@ temp-deleter offers a convenient way to manage temporary files on your operating
 2. <b>Privacy and Security:</b> Temporary files may also contain sensitive information, such as cached data or logs. Deleting these files regularly with temp-deleter helps safeguard your privacy by reducing the risk of unauthorized access to such data.
 
 # How to use temp-deleter on Windows
-![image](https://github.com/giomascitelli/temp-deleter/assets/47045018/cc43fceb-9cb8-4377-9da4-10873bd1ac96)
+![temp-deleter1 2printscreen](https://github.com/giomascitelli/temp-deleter/assets/47045018/37e2b7e0-5660-4e03-8390-d904b32576fe)
 
 Open the executable as <b>admin</b> and see the results.
 
-# How to run the .py file on Windows
+# For advanced users (Optional):
 
-1. Make sure you have Python 3 installed.
+To store log files in your Azure cloud, add your container's SAS URL to `logging_setup.py` to enable this feature.
 
-2. Open the Windows Terminal as an administrator
+## Steps to enable Azure Cloud Logging on temp-deleter:
 
-3. Type "cd" and the path to the folder where you placed "temp-deleter.py":
+1. Clone this repository using GitHub or the following command:
+   ```
+   git clone <repository_url>
+   ```
 
-```
-   cd C:\Users\Username\Desktop
-```
+3. Make sure you have Python 3 installed by typing in your terminal the following command:
+   ```
+   python --version
+   ```
 
-5. Run the script:
+5. Open `src\logging_setup.py` and update the line
+   ```
+   sas_url = ''
+   ```
+   to:
+   ```
+   sas_url = 'your_containers_sas_url'
+   ```
 
-```
-   python temp-deleter.py
-```
+### Setting Up an Azure Container:
+
+1. <b>Create an Azure Account:</b>
+- Sign up for a free or paid subscription on the <a href="https://azure.microsoft.com/en-us/free/" target="_blank">Microsoft Azure website</a>.
+
+
+2. <b>Create a Storage Account:</b>
+- Go to "Storage Accounts" and follow the prompts to create your storage account.
+
+
+3. <b>Create a Container</b>
+- Go to "Data Storage".
+- Create a new container.
+
+
+4. <b>Generate a Shared Access Signature (SAS):</b>
+- Go to your container and click on "Shared Access Tokens".
+- Ensure "Read", "Add", "Create" and "Write" permissions are checked.
+- Set the start and expiry dates and times.
+- Generate the SAS URL and copy it to your clipboard.
